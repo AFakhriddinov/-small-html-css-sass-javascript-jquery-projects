@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .custom-switch  {
+            display: inline-block;
+            
+
+        }
+         label {
+            width: 100px;
+            height: 50px;
+            display: inline-block;
+            border: thin solid grey;
+            border-radius: 20px;
+
+        }
+        .custom-switch label span {
+            display: block;
+            width: 45px;
+            height: 45px;   
+            border-radius: 50%;
+            margin-top: 2.5px;
+            margin-left: 5px;
+            background-color: grey;
+            transition: all 0.4s ease-in-out;
+    
+        }
+        .custom-switch input[type = checkbox]:checked + label span {
+            margin-left: 50px;
+            background-color: black;
+        }
+        .custom-switch input[type = checkbox]:checked + label {
+            background-color: lightgray;
+        }
+        .custom-switch input[type = checkbox]:checked {
+            visibility: hi
+        }
+        .custom-switch input[type = checkbox] {
+            visibility: hidden;
+        }
+
+        /* span {
+            position: relative;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            margin-left: 60px;
+        }
+
+        span::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            height: 50%;
+            width: 25px;
+            background-color: #1bb143;
+            content: "";
+            transform: translateX(10px) rotate(-45deg);
+            transform-origin: left bottom;
+
+            border-radius: 30%;
+        }
+
+        span::after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 25px;
+            width: 100%;
+            background-color: #953f3f;
+            content: "";
+            transform: translateX(20px) rotate(-45deg);
+            transform-origin: left bottom;
+            border-radius: 30%;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="custom-switch">
+        <input type="checkbox" id="switch">
+        <label for="switch">
+            <!-- <div id="tick-mark2"></div> -->
+            <span></span>
+        </label>
+    </div>
+</body>
+</html>

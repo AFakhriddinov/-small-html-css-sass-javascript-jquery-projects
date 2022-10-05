@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="" id="textarea" cols="30" rows="10">Hello world, I want to learn programming</textarea>
+    <input oninput="match()" type="text" id="input">
+    <p id="output"></p>
+
+
+
+    <script>
+        function match() {
+            let text = document.getElementById("textarea").value;
+            let array = text.split(" ");
+            let input = document.getElementById("input").value;
+
+            
+            // if (array.includes(input)== true) {
+                
+            //     document.getElementById("output").innerHTML = "this word matches";
+            // } else {
+            //     document.getElementById("output").innerHTML = "there is no such a word!";
+
+            // }
+
+            for (let i = 0; i < array.length; i++) {
+                console.log(array[i])
+                if(array[i]==input) {
+                    document.getElementById("output").innerHTML = "this word matches";
+                    return 'matched'
+                } 
+            
+            
+            }
+            
+            document.getElementById("output").innerHTML = "there is no such a word!";
+
+            
+        
+        }
+        
+    </script>
+
+
+</body>
+
+
+</html>

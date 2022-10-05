@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.js"></script>
+    <title>Document</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            font-family: Gotham Rounded, sans-serif;
+            font-weight: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
+        }
+
+        .calculator-grid {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            min-height: 100vh;
+            grid-template-columns: repeat(4, 150px);
+            grid-template-rows: minmax(120px, auto) repeat(5, 60px);
+        }
+
+        button {
+            cursor: pointer;
+            font-size: 2rem;
+            border: thin solid rgb(63, 62, 64);
+            color: white;
+            outline: none;
+            background-color: black;
+        }
+
+        .calculator-grid>button:hover {
+            background-color: #2c2a2a;
+        }
+
+        /* .span-two {
+            grid-column: span 2;
+            color: #adf802;
+            background-color: rgba(139, 0, 139, 0.8);
+        } */
+
+        .output {
+            grid-column: 1 / -1;
+            background-color: rgba(0, 0, 0, 0.75);
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            flex-direction: column;
+            padding: 10px;
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+
+        .output .previous-operand {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 1.5rem;
+        }
+
+        .output .current-operand {
+            color: white;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="calculator-grid" class="calculator-grid">
+        <div class="output">
+            <div id="previous-operand" class="previous-operand"></div>
+            <div id="current-operand" class="current-operand"></div>
+        </div>
+        <button class="button" value="7">7</button>
+        <button id="button" value="8">8</button>
+        <button value="9">9</button>
+        <button id="plus" value="+">+</button>
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button id="minus" value="-">-</button>
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button id="multiply" value="*">*</button>
+        <button value="0">0</button>
+        <button id="dot" value=".">.</button>
+        <button id="pow" value="">x²</button>
+        <button id="divide" value="/">/</button>
+        <button id="root" value="">√</button>
+        <button id="allClear" value="">AC</button>
+        <button id="delete" value="">DEL</button>
+        <button id="equal" value="=">=</button>
+
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(":button").click(function () {
+                let x = $(this).val()
+                if(x !== "="){
+                    $("#current-operand").append($("#current-operand").val() + $(this).val());
+                }
+            
+                })
+            $("#equal").click(function() {
+                let y = $("#current-operand").val()
+                let z = eval($("#current-operand").html())
+                $("#current-operand").html(z)
+            })
+        })
+       $("#allClear").click(function() {
+        $("#current-operand").html("")
+       })
+
+       $("#delete").click(function() {
+        let dlt = $("#current-operand").html();
+        let l = dlt.slice(0, -1)
+        $("#current-operand").html(l)
+        console.log(l)
+       })
+
+       $("#pow").click(function() {
+        let dlt = $("#current-operand").html();
+        let square = Math.pow(dlt, 2);
+        $("#current-operand").html(square)
+       })
+       
+       $("#root").click(function() {
+        let dlt = $("#current-operand").html();
+        let root = Math.sqrt(dlt);
+        $("#current-operand").html(root)
+       })
+
+      
+    </script>
+</body>
+
+</html>

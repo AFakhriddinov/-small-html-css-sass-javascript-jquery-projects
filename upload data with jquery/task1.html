@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            width: 500px;
+            border: thin solid lightgrey;
+            margin: auto;
+            margin-top: 30px;
+            border-radius: 7px;
+        }
+        .div {
+            border: thin solid lightgrey;
+            border-radius: 3px;
+            margin: 5px;
+            
+        }
+        #text {
+            width: 490px;
+            margin-left: 5px;
+            margin-right: 5px;
+            
+        }
+        button {
+            float: right;
+            margin-top: -40px;
+            background-color: green;
+            color: white;
+            height: 30px;
+            border-radius: 5%;
+            border: none;
+            margin-right: 10px;
+        }
+        h3 {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Jami: 200 ta</h3>
+    <button>Malumot yuklash</button>
+    <p id="text"></p>
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            $("button").click(async function () {
+                let photo = []
+                await $.ajax({
+                    url: "https://jsonplaceholder.typicode.com/todos",
+                    success: function (data) {
+                        photo = data;
+                    }
+
+
+                })
+                let i = 0;
+                for (let p of photo) {
+
+                    let col;
+                    if (p.completed == true) {
+                        col = `<div class='div'><input type='checkbox' checked><label>${p.title}</label></div>`
+                    } else {
+                        col = `<div class='div'><input type='checkbox'><label>${p.title}</label></div>`
+                    }
+                        
+                        $("#text").append(col);
+                  
+                }
+                
+
+                        
+
+            })
+
+        })
+        
+
+    </script>
+</body>
+
+</html>

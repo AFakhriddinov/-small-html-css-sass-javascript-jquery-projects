@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<body>  
+    <style>
+        fieldset {
+            width: 300px;
+        }
+        input {
+            height: 30px;
+            width: 200px;
+            margin-top: 10px;
+        }
+        button {
+            height: 30px;
+        }
+        
+        .main {
+            width: 100%;
+            margin-top: 100px;
+        }
+        .one {
+            width: 40%;
+            float: left;
+            margin-left: 10%;
+        }
+        .two {
+            width: 50%;
+            float: right;
+        }
+    </style>
+    <div class="main">
+    <div class="one">
+    <form action="https://google.com" method="get">
+        <fieldset>
+        <legend>Tizimga kirish</legend>
+        <p>
+            <label for="input">Loginni kiriting</label>
+            <br>
+            <input type="text" placeholder="Loginni kiriting">
+        </p>
+        <p>
+            <label for="parol">Parolni kiriting</label>
+            <br>
+            <input type="password" placeholder="Parolni kiriting">
+        </p>
+        <p>
+            <button type="submit">Parolni kiriting</button>
+        </p>
+    </fieldset>
+    </form>
+    </div>
+
+    <div class="two">
+        <form action="https://google.com" method="get">
+            <fieldset>
+            <legend>Ro'yhatdan o'tish</legend>
+            <p>
+                <label for="input">Loginni o'ylab toping</label>
+                <br>
+                <input type="text" placeholder="Loginni kiriting">
+            </p>
+            <p>
+                <label for="parol">Parolni o'ylab toping</label>
+                <br>
+                <input type="password" placeholder="Parolni kiriting">
+            </p>
+
+            <p>
+                <label for="parol">Parolni qayta kiriting</label>
+                <br>
+                <input type="password" placeholder="Parolni qayta kiriting">
+            </p>
+
+            <p>
+                <button type="submit">Parolni kiriting</button>
+            </p>
+        </fieldset>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

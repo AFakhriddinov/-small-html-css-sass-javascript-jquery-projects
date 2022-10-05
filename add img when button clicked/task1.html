@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery-3.6.0.js"></script>
+    <style>
+        #container {
+            text-align: center;
+        }
+
+        img {
+
+            width: 167px;
+            height: 167px;
+            border-radius: 10px;
+            border: thin solid black;
+            display: inline-block;
+            margin: 30px;
+            padding: 5px;
+        } 
+    </style>
+</head>
+
+<body>
+    <h1>#mywebsite</h1>
+
+    <p id="container">
+
+    </p>
+    <button type="button" id="upload">Upload</button>
+
+
+
+
+    <script type="text/javascript">
+
+        for (let i = 0; i < 10; i++) {
+            $(document).ready(function () {
+                $('#container').append('<div id="div"/>');
+
+            });
+
+        }
+        let css_property = {
+            "color": "green",
+            "margin-left": "500px",
+        }
+
+        $("#upload").css(css_property);
+
+        let array = [];
+        let arrayEmpty = ["1.jfif", "2.jfif", "3.jfif", "4.jfif", "5.jfif", "6.jfif", "7.jfif", "8.jfif", "9.jfif", "10.jfif"];
+        let index = 10
+
+        $("#upload").click(function () {
+            let img = arrayEmpty.shift()
+            // array.push(img)
+            // for (let i = 0; i < array.length; i++) {
+            //     $("#div").append('<img src="' + array[i] + '"/>')
+            // }
+            if (index > 0) {
+                index -= 1
+                $("#div").append('<img src="' + img + '"/>')
+            } 
+        })
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .container {
+            width: 600px;
+            height: 400px;
+            background-color: rgb(15, 32, 73);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .l-1 {
+            width: 170px !important;
+            height: 170px !important;
+            border-radius: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            animation: l-anim 1.5s infinite;
+        }
+
+        @keyframes l-anim {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(.95, .95);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
+        }
+
+        .l-2 {
+            width: 150px !important;
+            height: 150px !important;
+            border-radius: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            animation: l-anim 1.5s infinite;
+        }
+
+        .l-3 {
+            width: 130px !important;
+            height: 130px !important;
+            border-radius: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.3);
+            animation: l-anim 2s infinite;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #FFF;
+            border-radius: 50px;
+            position: relative;
+            cursor: pointer;
+            /* animation: circle-anim s infinite; */
+        }
+
+        .triangle {
+            cursor: pointer;
+            position: absolute;
+            top: 32%;
+            right: 34%;
+            width: 0px;
+            height: 0px;
+            border-top: 17px solid transparent;
+            border-bottom: 17px solid transparent;
+            border-left: 25px solid black;
+            animation: tr-anim 2s infinite;
+        }
+
+        @keyframes tr-anim {
+            0% {
+                transform: scale(1, 1)
+            }
+
+            50% {
+                transform: scale(1.1, 1.1)
+            }
+
+            100% {
+                transform: scale(1, 1)
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="l-1">
+                <div class="l-2">
+                    <div class="l-3">
+                        <div class="circle">
+                            <div class="triangle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

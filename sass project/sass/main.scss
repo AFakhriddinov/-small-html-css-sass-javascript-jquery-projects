@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+    .main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      
+       
+        
+    }
+}
+
+.top {
+    display: flex;
+    // grid-template-columns: auto auto;
+
+    #topbutton {
+        width: 100px;
+        height: 25px;
+        margin-top: 30px;
+        margin-left: 750px;
+    }
+}
+
+.grid-container {
+    display: flex;
+    // grid-template-columns: auto auto;
+
+
+    .grid-item {
+        width: 540px;
+        border-radius: 5px;
+        background-color: white;
+        height: 550px;
+        position: relative;
+
+        #relative {
+            border-radius: 5px;
+        }
+
+        #absolute {
+            position: absolute;
+            top: 140px;
+            left: 230px;
+            cursor: pointer;
+        }
+
+        #jonli {
+            position: absolute;
+            left: 450px;
+            width: 90px;
+            height: 25px;
+            background-color: red;
+            color: white;
+            border-radius: 3px;
+            border: none;
+
+            #circle {
+                width: 10px;
+                height: 10px;
+                float: left;
+                border-radius: 5px;
+                margin-top: 2px;
+                background-color: white;
+            }
+        }
+
+        h2,
+        p {
+            margin-left: 20px;
+        }
+
+        p {
+            float: left;
+        }
+
+        .bottom {
+            display: flex;
+            padding-left: 200px;
+
+            .social {
+                border: thin solid gray;
+                background-color: grey;
+                width: 30px;
+                margin: 5px;
+                padding: 4px;
+
+
+            }
+        }
+
+        .grid-item1 {
+            // display: flex;
+            // grid-template-columns: auto auto;
+            background-color: whitesmoke;
+            padding-left: 15px;
+            position: relative;
+            .grid-itemf {
+                display: flex;
+            }
+
+            .grid-item2 {
+                width: 255px;
+                height: 260px;
+                background-color: white;
+                border-radius: 5px;
+                margin: 15px;
+                margin-top: 0;
+                
+
+                .back1 {
+                    
+                    border-radius: 5px;
+                }
+
+                .front1 {
+                    position: absolute;
+                    bottom: 470px;
+                    right: 360px;
+                    cursor: pointer;
+                }
+
+                .anons {
+                    position: absolute;
+                    bottom: 540px;
+                    left: 195px;
+                    width: 90px;
+                    height: 25px;
+                    background-color: red;
+                    border-radius: 3px;
+                    border: none;
+                    color: white;
+                    display: flex;
+                    margin-left: 2px;
+
+                    #nnn {
+                        margin-top: -3px;
+
+                    }
+                }
+
+                .back2 {
+                   
+                    border-radius: 5px;
+                }
+
+                .front2 {
+                    position: absolute;
+                    top: 40px;
+                    right: 100px;
+                    cursor: pointer;
+                }
+
+                .back3 {
+                    border-radius: 5px;
+                }
+
+                .front3 {
+                    position: absolute;
+                    top: 350px;
+                    right: 370px;
+                    cursor: pointer;
+                }
+
+                .back4 {
+                    border-radius: 5px;
+                }
+
+                .front4 {
+                    position: absolute;
+                    top: 350px;
+                    right: 100px;
+                    cursor: pointer;
+                }
+
+                .feedback {
+                    margin-left: 5px;
+
+                    .vector {
+                        margin-left: 15px;
+                        margin-bottom: -2px;
+                    }
+
+                    .view {
+                        margin-left: 70px;
+                    }
+                }
+            }
+            .lower {
+                margin-top: 15px;
+            }
+        }
+    }
+}

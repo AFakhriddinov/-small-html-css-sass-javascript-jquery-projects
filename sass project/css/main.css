@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: whitesmoke; }
+  body .main {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+
+.top {
+  display: flex; }
+  .top #topbutton {
+    width: 100px;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 750px; }
+
+.grid-container {
+  display: flex; }
+  .grid-container .grid-item {
+    width: 540px;
+    border-radius: 5px;
+    background-color: white;
+    height: 550px;
+    position: relative; }
+    .grid-container .grid-item #relative {
+      border-radius: 5px; }
+    .grid-container .grid-item #absolute {
+      position: absolute;
+      top: 140px;
+      left: 230px;
+      cursor: pointer; }
+    .grid-container .grid-item #jonli {
+      position: absolute;
+      left: 450px;
+      width: 90px;
+      height: 25px;
+      background-color: red;
+      color: white;
+      border-radius: 3px;
+      border: none; }
+      .grid-container .grid-item #jonli #circle {
+        width: 10px;
+        height: 10px;
+        float: left;
+        border-radius: 5px;
+        margin-top: 2px;
+        background-color: white; }
+    .grid-container .grid-item h2,
+    .grid-container .grid-item p {
+      margin-left: 20px; }
+    .grid-container .grid-item p {
+      float: left; }
+    .grid-container .grid-item .bottom {
+      display: flex;
+      padding-left: 200px; }
+      .grid-container .grid-item .bottom .social {
+        border: thin solid gray;
+        background-color: grey;
+        width: 30px;
+        margin: 5px;
+        padding: 4px; }
+    .grid-container .grid-item .grid-item1 {
+      background-color: whitesmoke;
+      padding-left: 15px;
+      position: relative; }
+      .grid-container .grid-item .grid-item1 .grid-itemf {
+        display: flex; }
+      .grid-container .grid-item .grid-item1 .grid-item2 {
+        width: 255px;
+        height: 260px;
+        background-color: white;
+        border-radius: 5px;
+        margin: 15px;
+        margin-top: 0; }
+        .grid-container .grid-item .grid-item1 .grid-item2 .back1 {
+          border-radius: 5px; }
+        .grid-container .grid-item .grid-item1 .grid-item2 .front1 {
+          position: absolute;
+          bottom: 470px;
+          right: 360px;
+          cursor: pointer; }
+        .grid-container .grid-item .grid-item1 .grid-item2 .anons {
+          position: absolute;
+          bottom: 540px;
+          left: 195px;
+          width: 90px;
+          height: 25px;
+          background-color: red;
+          border-radius: 3px;
+          border: none;
+          color: white;
+          display: flex;
+          margin-left: 2px; }
+          .grid-container .grid-item .grid-item1 .grid-item2 .anons #nnn {
+            margin-top: -3px; }
+        .grid-container .grid-item .grid-item1 .grid-item2 .back2 {
+          border-radius: 5px; }
+        .grid-container .grid-item .grid-item1 .grid-item2 .front2 {
+          position: absolute;
+          top: 40px;
+          right: 100px;
+          cursor: pointer; }
+        .grid-container .grid-item .grid-item1 .grid-item2 .back3 {
+          border-radius: 5px; }
+        .grid-container .grid-item .grid-item1 .grid-item2 .front3 {
+          position: absolute;
+          top: 350px;
+          right: 370px;
+          cursor: pointer; }
+        .grid-container .grid-item .grid-item1 .grid-item2 .back4 {
+          border-radius: 5px; }
+        .grid-container .grid-item .grid-item1 .grid-item2 .front4 {
+          position: absolute;
+          top: 350px;
+          right: 100px;
+          cursor: pointer; }
+        .grid-container .grid-item .grid-item1 .grid-item2 .feedback {
+          margin-left: 5px; }
+          .grid-container .grid-item .grid-item1 .grid-item2 .feedback .vector {
+            margin-left: 15px;
+            margin-bottom: -2px; }
+          .grid-container .grid-item .grid-item1 .grid-item2 .feedback .view {
+            margin-left: 70px; }
+      .grid-container .grid-item .grid-item1 .lower {
+        margin-top: 15px; }
+
+/*# sourceMappingURL=main.css.map */

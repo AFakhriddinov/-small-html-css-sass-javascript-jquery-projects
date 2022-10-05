@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+
+        }
+
+        body {
+            background-color: #ecf0f1;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .first {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inside {
+            width: 200px;
+            height: 200px;
+            position: relative;
+
+        }
+
+        .inside:hover .angle1, .inside:hover .angle2, .inside:hover .angle3, 
+        .inside:hover .angle4, .inside:hover .angle5, .inside:hover .angle6, 
+        .inside:hover .angle7, .inside:hover .angle8 {
+            background-color: rgb(22, 129, 206);
+        }
+
+        .one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover,
+        .seven:hover, .eight:hover {
+            background-color: rgb(22, 129, 206);
+
+        }
+         
+        .one {
+            position: relative;
+            background-color: rgb(211, 75, 248);
+            z-index: 3;
+
+        }
+
+  
+        .angle1 {
+            width: 30px;
+            height: 30px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 50%;
+            left: calc(100% - 15px);
+            /* background-color: rgb(211, 75, 248); */
+            background-color: black;
+        }
+
+        .two {
+            position: relative;
+            background-color: rgb(109, 171, 232);
+            z-index: 2;
+        }
+
+        .angle2 {
+            width: 30px;
+            height: 30px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 85px;
+            left: 185px;
+            background-color: rgb(109, 171, 232);
+        }
+
+        .three {
+            position: relative;
+            background-color: rgb(65, 234, 167);
+            z-index: 1;
+        }
+
+        .angle3 {
+            width: 30px;
+            height: 30px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 85px;
+            left: 185px;
+            background-color: rgb(65, 234, 167);
+        }
+
+        .four {
+            background-color: rgb(12, 171, 81);
+        }
+
+        .five {
+            position: relative;
+            background-color: rgb(222, 229, 91);
+            z-index: 3;
+        }
+
+        .angle5 {
+            width: 30px;
+            height: 30px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 85px;
+            left: 185px;
+            background-color: rgb(222, 229, 91);
+        }
+
+        .six {
+            position: relative;
+            background-color: rgb(245, 174, 66);
+            z-index: 2;
+        }
+
+        .angle6 {
+            width: 30px;
+            height: 30px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 85px;
+            left: 185px;
+            background-color: rgb(245, 174, 66);
+        }
+
+        .seven {
+            position: relative;
+            background-color: rgb(237, 113, 82);
+            z-index: 1;
+        }
+
+        .angle7 {
+            width: 30px;
+            height: 30px;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 85px;
+            left: 185px;
+            background-color: rgb(237, 113, 82);
+        }
+
+        .eight {
+            background-color: rgb(36, 187, 127);
+        }
+        .img {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img img {
+            display: block;
+            width: 30px;
+            transition: .2s;
+        }
+
+        .inside:hover .img img {
+            transition: .2s;
+            transform: scale(1.6);
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 10px;
+        }
+
+        @media (min-width:0px) and (max-width: 447px) {
+        .first {
+            display: block;
+            margin: auto;
+
+        }
+        
+    }
+
+    @media (min-width: 447px) and (max-width: 769px) {
+        .first {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .inside {
+            width: 300px;
+        }
+    }
+    @media (min-width: 769px) and (max-width: 990px) {
+        .first {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .inside {
+            width: 300px;
+        }
+    }
+    @media (min-width: 990px) and (max-width: 1200px) {
+        .first {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="submain">
+            <div class="first">
+                <div class="inside one">
+                    <div class="img">
+                        <img src="helmet.png" alt="">
+                    </div>
+                        <h3>Loader</h3>
+                        <p>this is my interactive website. for more information
+                            please visit my personal blogs and
+                            i am sure you will enjoy</p>
+                  
+                    <div class="angle1"></div>
+                </div>
+                <div class="inside two">
+                    <div class="img">
+                        <img src="tool.png" alt="">
+                    </div>
+                    <h3>Slider</h3>
+                    <p>this is my interactive website. for more information
+                        please visit my personal blogs and
+                        i am sure you will enjoy</p>
+                    <div class="angle2"></div>
+                </div>
+                <div class="inside three">
+                   <div class="img">
+                    <img src="shape.png" alt="">
+                   </div>
+                    <h3>3D Effect</h3>
+                    <p>this is my interactive website. for more information
+                        please visit my personal blogs and
+                        i am sure you will enjoy</p>
+                    <div class="angle3"></div>
+                </div>
+                <div class="inside four">
+                    <div class="img">
+                        <img src="signs.png" alt="">
+                    </div>
+                    <h3>Table</h3>
+                    <p>this is my interactive website. for more information
+                        please visit my personal blogs and
+                        i am sure you will enjoy</p>
+                </div>
+            </div>
+            <div class="first">
+                <div class="inside five">
+                    <div class="img">
+                        <img src="helmet.png" alt="">
+                    </div>
+                    <h3>Loader</h3>
+                    <p>this is my interactive website. for more information
+                        please visit my personal blogs and
+                        i am sure you will enjoy</p>
+                    <div class="angle5"></div>
+                </div>
+                <div class="inside six">
+                    <div class="img">
+                        <img src="tool.png" alt="">
+                    </div>
+                    <h3>Slider</h3>
+                    <p>this is my interactive website. for more information
+                        please visit my personal blogs and
+                        i am sure you will enjoy</p>
+                    <div class="angle6"></div>
+                </div>
+                <div class="inside seven">
+                    <div class="img">
+                        <img src="shape.png" alt="">
+                    </div>
+                    <h3>Hover effect</h3>
+                    <p>this is my interactive website. for more information
+                        please visit my personal blogs and
+                        i am sure you will enjoy</p>
+                    <div class="angle7"></div>
+                </div>
+                <div class="inside eight">
+                    <div class="img">
+                        <img src="signs.png" alt="">
+                    </div>
+                    <h3>Bouncing</h3>
+                    <p>this is my interactive website. for more information
+                        please visit my personal blogs and
+                        i am sure you will enjoy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

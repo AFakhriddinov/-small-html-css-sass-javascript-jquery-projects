@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Document</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        form {
+            margin: auto;
+            margin-top: 50px;
+            width: 500px;
+        }
+        input {
+            width: 80px;
+            height: 20px;
+            font-size: larger;
+        }
+        #shape {
+            border: thin solid black;
+            width: 50px;
+            height: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+<form action="">
+    <label for="width">Width</label>
+    <input type="text" id="width">
+    <label for="height">Height</label> 
+    <input type="text" id="height"><br><br>
+
+    <label for="radius">Radius</label>
+    <input type="text" id="radius">
+    <label for="text">Color</label>
+    <input type="text" id="color">
+    <button type="button" id="button" onclick="func()">Click me</button>
+    <br><br>
+
+
+    <div id="shape"></div>
+
+</form>
+
+    <script>
+
+        function func() {
+            let x = document.getElementById("width").value;
+            document.getElementById("shape").style.width = x+"px";
+
+            let y = document.getElementById("height").value;
+            document.getElementById("shape").style.height = y + "px";
+
+            let z = document.getElementById("radius").value;
+            document.getElementById("shape").style.borderRadius = z + "%";
+
+            let w = document.getElementById("color").value;
+            document.getElementById("shape").style.backgroundColor = w;
+            
+        }
+
+       
+
+        
+
+    </script>
+</body>
+
+</html>

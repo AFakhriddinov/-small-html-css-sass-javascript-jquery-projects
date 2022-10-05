@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .row {
+        width: 80%;
+        height: 40vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    .col {
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .box:hover {
+        box-shadow: 0 0 11px rgba(33,33,33,.2);
+    }
+    .col p {
+        padding: 1rem;
+    }
+    .box {
+        width: 11rem;
+        height: 100%;
+        background: #fff;
+        border-bottom: thin solid lightgrey;
+        border-right: thin solid lightgrey;
+        border-left: thin solid lightgrey;
+        box-shadow: rgba(149, 157, 165, 0.2)  0px 10px 10px;
+    }
+    .sh3 {
+        box-shadow: rgba(149, 157, 165, 0.2)  0px 20px 10px;
+    }
+    .sh2 {
+        box-shadow: rgba(149, 157, 165, 0.2)  0px 15px 10px;
+    }
+    .sh5 {
+        box-shadow: rgba(149, 157, 165, 0.2)  0px 1px 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>.shadow</p>
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <p>.shadow</p>
+                <div class="box sh2"></div>
+            </div>
+            <div class="col">
+                <p>.shadow</p>
+                <div class="box sh3"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>.shadow</p>
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <p>.shadow</p>
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <p>.shadow</p>
+                <div class="box sh5"></div>
+            </div>
+            <div class="col">
+                <p>.shadow</p>
+                <div class="box"></div>
+            </div>
+            <div class="col">
+                <p>.shadow</p>
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
